@@ -127,10 +127,19 @@ contract IfElse {
     }
 }
 
-contract myMapping{
-    mapping (string name => uint256) public disMapping;
+contract MyMapping{
+    mapping (string => uint256) public disMapping;
+    mapping (address => uint256) public alloMapping;
 
-    function getMap(string memory _name) public view returns(uint256) {
+    /*function getMap(string memory _name) public view returns(uint256) {
         return disMapping[_name];
+    }*/
+
+    function setMap(string memory _name, uint256 _value) public {
+        disMapping[_name] = _value;
+    }
+
+    function setAllo(address _address, uint256 _allocazion) public {
+        alloMapping[_address] = _allocazion;
     }
 }
