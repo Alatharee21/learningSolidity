@@ -204,7 +204,7 @@ contract MyMapping{
     }
 }*/
 
-contract stats{
+/*contract stats{
 
     enum Status{
         waiting,
@@ -246,4 +246,42 @@ contract stats{
     }
 
 
+}*/
+
+enum AirdropState{
+ Checked,
+ Unclaimed,
+ Claimed,
+ Vesting 
+}
+
+contract claiming{
+    AirdropState public states;
+
+    //Not a good function
+    function claimor() public {
+
+    if(msg.sender == 0x01eca328b460e687795d714749f5692eb097118c){
+        states = AirdropState.Checked;
+    }
+    else if(msg.sender == 0x52908400098527886E0F7030069857D2E4169EE7){
+        states = AirdropState.Claimed;
+    }
+    else if(msg.sender == 0x8617E340B3D01FA5F11F306F4090FD50E238070D){
+        states = AirdropState.Unclaimed;
+    }
+    else if(msg.sender == 0xde709f2102306220921060314715629080e2fb77){
+        states = AirdropState.Vesting;
+    }
+    else if(msg.sender == 0x27b1fdb04752bbc536007a920d24acb045561c26){
+        states = AirdropState.Unclaimed;
+    }
+    else if(msg.sender == 0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed){
+        states = AirdropState.Claimed;
+    }
+    }
+
+    /*mapping(address => AirdropState) public ctates;
+
+    ctates[msg.sender] = AirdropState.Claimed;*/
 }
