@@ -203,3 +203,47 @@ contract MyMapping{
         num1.pop();
     }
 }*/
+
+contract stats{
+
+    enum Status{
+        waiting,
+        alerted,
+        accepted,
+        rejected,
+        declined
+    }
+
+    Status public status = Status.alerted;
+
+
+    function getStats() public view returns(Status){
+        return status;
+    }
+
+    function set(Status _status) public {
+    status = _status;
+    }
+
+    function wait() public {
+    status = Status.waiting;
+    }
+
+    function alert() public {
+    status = Status.alerted;
+    }
+
+    function accept() public {
+    status = Status.accepted;
+    }
+
+    function reject() public {
+    status = Status.rejected;
+    }
+
+    function cancel() public {
+    status = Status.declined;
+    }
+
+
+}
