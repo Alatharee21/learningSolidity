@@ -34,7 +34,7 @@ pragma solidity ^0.8.16;
     bytes1 public a = 0xb5;
 }*/
 
-contract variables{
+/*contract variables{
     //State Variables(Declared outside the function)
     string public Sring = "this is a string";
     uint256 public no1 = 45;
@@ -68,14 +68,14 @@ contract variables{
         return (i, lvar);
     }
 
-    /*function loopCheck(uint256 allocation) public pure returns(string memory){
+    function loopCheck(uint256 allocation) public pure returns(string memory){
         for(uint256 allocation; allocation < 256; allocation++){
             return "We made it this far";
         }
-    }*/
-}
+    }
+}*/
 
-contract Loop {
+/*contract Loop {
     function loop() public pure {
         // for loop
         for (uint256 i = 0; i < 10; i++) {
@@ -95,7 +95,7 @@ contract Loop {
             j++;
         }
     }
-}
+}*/
 
 /*contract SimpleStorage {
     // State variable to store a number
@@ -111,7 +111,7 @@ contract Loop {
     }
 }*/
 
-contract IfElse {
+/*contract IfElse {
     function foo(uint256 x) public pure returns (uint256) {
         if (x < 10) {
             return 0;
@@ -130,10 +130,11 @@ contract IfElse {
 contract MyMapping{
     mapping (string => uint256) public disMapping;
     mapping (address => uint256) public alloMapping;
+    mapping (address => bool) public hasClaimed;
 
-    /*function getMap(string memory _name) public view returns(uint256) {
+    function getMap(string memory _name) public view returns(uint256) {
         return disMapping[_name];
-    }*/
+    }
 
     function setMap(string memory _name, uint256 _value) public {
         disMapping[_name] = _value;
@@ -142,4 +143,63 @@ contract MyMapping{
     function setAllo(address _address, uint256 _allocazion) public {
         alloMapping[_address] = _allocazion;
     }
-}
+
+    function checkClaim(address _address) public view returns (bool){
+        return alloMapping[_address] != 0;
+    }
+}*/
+
+/*contract MyArray{
+    uint256[] public num1;
+    uint256[3] public num2;
+    string [] public names;
+    uint256[][] public num3 = [ [1,2,3], [4,5,6], [7,8,9]];
+
+    function getName(uint256 index) public view returns(string memory) {
+        return names[index];
+    }
+
+    function pushNum(uint256 i) public {
+        num1.push(i);
+    }
+
+    function pushName(string memory i) public {
+        names.push(i);
+    }
+
+    function getArr() public view returns(uint256[] memory){
+        return num1;
+    }
+
+    function getArr2D() public view returns(uint256[][] memory){
+        return num3;
+    }
+
+    function remLast() public {
+        num1.pop();
+    }
+
+    function theLength() public view returns(uint256){
+        return num1.length;
+    }
+
+    function remove(uint256 index) public {
+        delete num1[index];
+    }
+
+    function removeShifting(uint256 _index) public {
+        //require(_index < num1.length, "index out of bounds");
+
+        for (uint256 i = _index; i < num1.length - 1; i++) {
+            num1[i] = num1[i + 1];
+        }
+        num1.pop();
+    }
+
+    function removeReplace(uint256 index) public {
+        // Move the last element into the place to delete
+        num1[index] = num1[num1.length - 1];
+        // Remove the last element
+        num1.pop();
+    }
+}*/
