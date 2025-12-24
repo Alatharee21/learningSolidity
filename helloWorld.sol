@@ -280,8 +280,19 @@ contract claiming{
         states = AirdropState.Claimed;
     }
     }
+}
 
-    /*mapping(address => AirdropState) public ctates;
+contract CState{
 
-    ctates[msg.sender] = AirdropState.Claimed;*/
+    enum ClaimState{
+        Claimed,
+        Unclaimed,
+        Vested 
+        }
+
+        mapping(address => ClaimState) public claimState;
+
+        function letCheck() public{
+            claimState[msg.sender] = ClaimState.Unclaimed;
+        }
 }
