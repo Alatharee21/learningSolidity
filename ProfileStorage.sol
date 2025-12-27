@@ -39,9 +39,7 @@ contract ProfileStorage{
 
     function suspendAcct(address _inactive) public{
         require(stored[msg.sender].status == AccountStatus.Active, "Account is inactive");
-
         stored[_inactive].status = AccountStatus.Inactive;
-
     }
     function getProfile(address _user) public view returns(string memory, uint256, address, uint256, AccountStatus, uint256){
         User memory u = stored[_user];
