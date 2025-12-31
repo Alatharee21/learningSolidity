@@ -36,7 +36,7 @@ contract ConditionLoopExample {
     }
 }*/
 
-/*contract IfElse{
+contract IfElse{
 
     //This function here continues to return A even if the value input is >=70 because 70 is greater than 50 and it is read first.
     function orderR(uint256 _x) public pure returns (string memory){
@@ -67,4 +67,4 @@ contract ConditionLoopExample {
         return "F";
     }
     }
-}*/
+}
