@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "claimor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "states",
+				"outputs": [
+					{
+						"internalType": "enum AirdropState",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"helloWorld.sol": "claiming"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"helloWorld.sol": {
+			"keccak256": "0xa3c6fa9e9a971685fdf7494614f1ac317fd737df489b46a285a4248ad5072681",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b3cf692e02e93f1dceab80cad2116b81879ab82c9d2976a93de4643bfbfb845",
+				"dweb:/ipfs/QmZKcKnEdjKpS8EFLbkQ7VUpvooLLuBATtupzakRU9yUq4"
+			]
+		}
+	},
+	"version": 1
+}

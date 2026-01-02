@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "createProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum ProfileStorage.AccountStatus",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_inactive",
+						"type": "address"
+					}
+				],
+				"name": "suspendAcct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Rasheed",
+			"details": "Stores profile details",
+			"kind": "dev",
+			"methods": {},
+			"title": "Profile Storage (Mini Project)",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Profile Onchain ",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ProfileStorage.sol": "ProfileStorage"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ProfileStorage.sol": {
+			"keccak256": "0x477b084819fde982252c6e852d380bdf6c9be08d8948bee692e374fea26b28ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f008e3cdc5e3e47819f6134e45ef7f7a2b763742f74d51e6d32c660136b956b",
+				"dweb:/ipfs/QmZSXpaCvXUf6SY5KSnU9eJMQ7HDc98m4fYZjhjtje6G7q"
+			]
+		}
+	},
+	"version": 1
+}

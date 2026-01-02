@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_proposal",
+						"type": "string"
+					}
+				],
+				"name": "Propose",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "opinions",
+				"outputs": [
+					{
+						"internalType": "enum VotingProposals.Opinion",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proposal",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tallyVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "forVotes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "againstVotes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "abstainVotes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum VotingProposals.Opinion",
+						"name": "_opinion",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "voteCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VotingContract.sol": "VotingProposals"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VotingContract.sol": {
+			"keccak256": "0xb5b6a8c41d88de3f9b02ed134898d7ee0d6aeb13f0acefe03a8a8e46d47ac239",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50b53566bca1a41205b8e78892c5b9bcaf5af558694f3ad92fc72350ca4145d8",
+				"dweb:/ipfs/QmU3eLJWfa7SXnVGMvCBhvehiYMjW37sjniuv6M1zk3N6Q"
+			]
+		}
+	},
+	"version": 1
+}

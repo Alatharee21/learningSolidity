@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "Deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalanace",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W2day3.sol": "EthReceiver"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W2day3.sol": {
+			"keccak256": "0x45d4792bb2de0ffa12088c8a8c479d77beebfefbd4ffacf72c0e05f4969e4326",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9d8a6ac4fefebf0dce6d0f6068b2b9747f06a291bf6ec519d0bb5d005cd263d",
+				"dweb:/ipfs/QmV5Efr8aBJHQyy9WjVyhAF1CqvaV2qNMatJEBDmdxbG3i"
+			]
+		}
+	},
+	"version": 1
+}

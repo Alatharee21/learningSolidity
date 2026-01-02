@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "createProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Profile.AccountStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_inactive",
+						"type": "address"
+					}
+				],
+				"name": "suspendAcct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Rasheed",
+			"details": "Stores profile details",
+			"kind": "dev",
+			"methods": {},
+			"title": "Combining day1-5 knowledge",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Profile Onchain",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day1-5Together.sol": "Profile"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day1-5Together.sol": {
+			"keccak256": "0x398f7ae1a1b57a441e42f432ff7d4c36ae0526402eb578f844cb6347bd033d50",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aae15a6042785dddf24cb7252485ec2872143e6ba421385d98e8cc0f8add3440",
+				"dweb:/ipfs/QmV17BS9ZsQrNRtoFyL2F3uHuFTojk2Qv9mYSTCh8ebfQ6"
+			]
+		}
+	},
+	"version": 1
+}

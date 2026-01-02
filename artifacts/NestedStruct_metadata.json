@@ -1,0 +1,157 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					}
+				],
+				"name": "Register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "frozeProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lastDeposit",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct NestedStruct.Wallet",
+						"name": "wallet",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "twoFAenabled",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isFrozen",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct NestedStruct.Security",
+						"name": "security",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "username",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct NestedStruct.Profile",
+						"name": "profile",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W3day1.sol": "NestedStruct"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W3day1.sol": {
+			"keccak256": "0xd6c63603e8fa9b6834dcbc2d394d47a26a6583b29a78fc263c216dfcb90c5246",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d453175b9960292e3f11f23880eb5bcfa9c9f28efcd119a3e636f673127cec28",
+				"dweb:/ipfs/QmcJ6ibFXW2EVjz9UCgsNiywMAQ4oP6MrBAzncEdwnjL3H"
+			]
+		}
+	},
+	"version": 1
+}

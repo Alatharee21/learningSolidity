@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "myNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "doubleNum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "__myNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "setNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "@author",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "@dev",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day4.sol": "FunctionBasic"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day4.sol": {
+			"keccak256": "0x65723d14c1c21fd5ec2baf1adfa56c6f255ae7849ca69b34f1c0cfb49ece2959",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6ed5c33664e149663a67fdf2acb3e0b2d7065b7ce1da10de815a9428063f96f",
+				"dweb:/ipfs/QmeKggfx8KXAQV9bcpAsC8mtwhQXU3uLuJBFsVJ99B7CYr"
+			]
+		}
+	},
+	"version": 1
+}

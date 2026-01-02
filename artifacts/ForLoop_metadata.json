@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W3day4.sol": "ForLoop"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W3day4.sol": {
+			"keccak256": "0xd51ae49b409085d19e290e01263d3b377d39c2a0df688ffb1d7a20b0e9d9e311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://22e0b45fd8ee148e7fa5261df6397272abeb4e597c17ac8afef21d57e9ae639c",
+				"dweb:/ipfs/QmNf7hFdD4wPYrAvT4vBYS1C2gz4knp4C7thSAk8oFwPnj"
+			]
+		}
+	},
+	"version": 1
+}
