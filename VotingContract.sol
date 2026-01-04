@@ -44,4 +44,8 @@ contract VotingProposals{
             }
         }
     }
+
+    function getResult() public view returns(uint256){
+        return voteCount;
+    }// This function does same thing as "uint256 public voteCount;" declared above and may be omitted
 }

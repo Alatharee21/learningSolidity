@@ -19,6 +19,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -147,11 +160,11 @@
 	},
 	"sources": {
 		"VotingContract.sol": {
-			"keccak256": "0xb5b6a8c41d88de3f9b02ed134898d7ee0d6aeb13f0acefe03a8a8e46d47ac239",
+			"keccak256": "0x481de405f3e61bf4f7831c94b81bfbdcc291b45a7d4e5c6f4dd1c208a676c872",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://50b53566bca1a41205b8e78892c5b9bcaf5af558694f3ad92fc72350ca4145d8",
-				"dweb:/ipfs/QmU3eLJWfa7SXnVGMvCBhvehiYMjW37sjniuv6M1zk3N6Q"
+				"bzz-raw://c51a2df50d359f69d1e335bf0a7c5c4055077c32e2f2ffa7b3aa8a0e264ecddc",
+				"dweb:/ipfs/QmRr6LskMNHcuti7qyBFDQATWexGuAE5U4vCz94JZ63TD8"
 			]
 		}
 	},
