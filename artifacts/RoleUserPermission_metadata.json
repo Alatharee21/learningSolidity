@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "enum RoleUserPermission.Permission",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "User",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "admin",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "moderator",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "member",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum RoleUserPermission.Permission",
+						"name": "_permission",
+						"type": "uint8"
+					}
+				],
+				"name": "cpermission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W3day2.sol": "RoleUserPermission"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W3day2.sol": {
+			"keccak256": "0x6134374d43d6cdfc9ac49a9ef450664bba76ead6a754a8d2232b8355d71d73a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c047585e6aeb593ec99179dd16166da201c98b63d2ca8593dbd999ea8b5bf8e6",
+				"dweb:/ipfs/QmQX3da18KArs4V5CEzXoMzcPZXBPYTpdUxNayGqHXqJyT"
+			]
+		}
+	},
+	"version": 1
+}
