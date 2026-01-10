@@ -15,7 +15,7 @@ modifier onlyOwner(){
 }
 
 }
-
+//This contract does not work right... I tried
 contract ProfileModifier {
 
     enum Role{
@@ -23,8 +23,22 @@ contract ProfileModifier {
         Admin
     }
 
+    enum Status{
+        Paused,
+        notPaused
+    }
+
+    //No actual balance tracking as enums are static; no dynamic updates.
+    enum Balance{
+        lessThanZero,
+        equalToZero,
+        greaterThanZero
+    }
+
     address public deployer;
     mapping(address => Role) public roles;
+    mapping(address => Status) public status;
+    mapping(address => Balance) public balance;
     bool public canDelete;
 
     constructor (){
@@ -38,34 +52,36 @@ contract ProfileModifier {
         _;
     }
     modifier notPaused(){
-        require(msg.value > 0, "Transfer paused");
+        require(status[msg.sender] == Status.notPaused, "Transfer paused");
         _;
     }
     modifier minimumBalance(){
-        require(msg.value > 0, "Insufficient fund");
+        require(balance[msg.sender] == Balance.greaterThanZero, "Insufficient fund");
         _;
     }
 
     //Admin functions
-    function setAdmin(address _addr) public onlyAdmin payable minimumBalance{
+    function setAdmin(address _addr, bool _canDelete) public onlyAdmin payable minimumBalance{
+        roles[msg.sender] = Role.Admin;
         roles[_addr] = Role.Admin;
+        canDelete = !_canDelete;
     }
 
     function sackAdmin(address _addr) public onlyAdmin{
         roles[_addr] = Role.notAdmin;
     }
 
-    function admin() public onlyAdmin{
-        canDelete = true;
-    }
-
     //Transfer
-    function transfer(uint256 amount)public payable notPaused returns(uint256){
-       return amount -= msg.value;
+    function transfer(address payable to, uint256 amount)public payable notPaused{
+        require(address(this).balance >= amount, "Insifficient contract balance");
+        (bool success, ) = to.call{value: amount}("");
+        require(success, "Transfer failed");
     }
 
     //Withdraw
-    function withdraw(uint256 amount) public payable minimumBalance {
-        amount -=msg.value;
+    function withdraw(uint256 amount) public payable notPaused minimumBalance {
+        require(address(this).balance >= amount, "Insifficient contract balance");
+        (bool success, ) = msg.sender.call{value: amount}("");
+        require(success, "Withdrawal failed");
     }
 }

@@ -11,10 +11,22 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "admin",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "enum ProfileModifier.Balance",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -81,6 +93,11 @@
 						"internalType": "address",
 						"name": "_addr",
 						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_canDelete",
+						"type": "bool"
 					}
 				],
 				"name": "setAdmin",
@@ -91,19 +108,37 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "enum ProfileModifier.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
 					}
 				],
 				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
@@ -149,11 +184,11 @@
 	},
 	"sources": {
 		"W3day3.sol": {
-			"keccak256": "0x90bf5dace8e4542d72020ec6fdcf0ebb4d346e272cf21f970e121b879df173e9",
+			"keccak256": "0x0fbc16fcc16d47b89dd5f4298fc4f846ae56a25e6c650a60010be2ae714aac2d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e9f0477828199c48356bb68b695cd7c6b6c89b052dcad948e5e0851cb54b67cc",
-				"dweb:/ipfs/QmYosvzq1CXsnhBNwGCcsFJ9LzBgbBRTnz7WfLe684KTgG"
+				"bzz-raw://c6b840cb36cc3d7b7af454cc15dc15d61dcae84c3cc949800905f506fc16e93d",
+				"dweb:/ipfs/QmRTGwXs3DiRZqmj2GmW2pfVcDwL2KFBd6mk6PLRfnor1r"
 			]
 		}
 	},
