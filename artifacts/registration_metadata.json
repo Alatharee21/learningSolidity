@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -65,6 +70,11 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
 						"internalType": "enum registration.Role",
 						"name": "_roles",
 						"type": "uint8"
@@ -78,6 +88,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "IncreaseBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_username",
 						"type": "string"
@@ -86,6 +109,19 @@
 				"name": "RegisterNow",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -144,19 +180,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "username",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -187,11 +210,11 @@
 	},
 	"sources": {
 		"W3day4.sol": {
-			"keccak256": "0xca97e20490541f81db77d2fd1bc599059d613e691f1bef123ab034012ec1387d",
+			"keccak256": "0xad9b196ec653ed27923e8bea3a6439876db7d39937e1d235b7403f9be9715f62",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://192f7b1288d730ba8216da041901961164adde6062d527615a912b582b915107",
-				"dweb:/ipfs/Qmaf6JRXgDy6CdR7bGF7GHcuhc64UMKcBeCNr87U4iWoen"
+				"bzz-raw://6916340b3274dbba122d7b13859e804d0787118628e76ae4ac78b49a82734b35",
+				"dweb:/ipfs/QmRcnF9iw8eMPE6pMDMortQRNPhfueEjbnQ8rAY1L2bVoJ"
 			]
 		}
 	},

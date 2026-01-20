@@ -41,7 +41,12 @@ contract registration{
     mapping(address => uint256) public balance;
     mapping(address => bool) public isRegistered;
     uint256 private id = 0;
-    string public username;
+    string private username;
+    address public admin;
+
+    constructor() {
+        admin = msg.sender;
+    }
 
     enum Role  {
         none,
@@ -64,19 +69,19 @@ contract registration{
         emit Register(msg.sender, uid);
     }
 
-    function ChangeRole(Role _roles) public {
-        roles[msg.sender] = _roles;
-        emit Roole(msg.sender, _roles);
+    modifier OnlyAdmin(){
+        require(msg.sender == admin, "Not an admin");
+        _;
+    }
+
+    function ChangeRole(address _user, Role _roles) external OnlyAdmin {
+        roles[_user] = _roles;
+        emit Roole(_user, _roles);
+    }
+
+    function IncreaseBalance(address _user)public payable {
+        require(msg.value > 0, "Deposit something you piss of shite");
+        balance[_user] += msg.value;
+        emit Balance(_user, msg.value);
     }
 }
-/*
-Role changes
-Balance updates
-
-Index:
-Addresses
-IDs
-
-Avoid indexing:
-Strings
-Large bytes*/
