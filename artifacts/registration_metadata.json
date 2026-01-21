@@ -11,6 +11,33 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "reg",
+						"type": "address"
+					}
+				],
+				"name": "ActiveUser",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "attempter",
+						"type": "address"
+					}
+				],
+				"name": "NotAdmin",
+				"type": "error"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -195,7 +222,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"W3day4.sol": "registration"
+			"W3day5.sol": "registration"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -209,12 +236,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"W3day4.sol": {
-			"keccak256": "0xad9b196ec653ed27923e8bea3a6439876db7d39937e1d235b7403f9be9715f62",
+		"W3day5.sol": {
+			"keccak256": "0x3b3c95b23c5bac058c2a7186d7dfa578d1be9c9ab7fed8bcf01a5649fcfcd629",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6916340b3274dbba122d7b13859e804d0787118628e76ae4ac78b49a82734b35",
-				"dweb:/ipfs/QmRcnF9iw8eMPE6pMDMortQRNPhfueEjbnQ8rAY1L2bVoJ"
+				"bzz-raw://53e0f736ae063e465820f173000b12e79f06ea54b4d03b36c848d45f27844258",
+				"dweb:/ipfs/QmRQJqNhAhfoekZ7n5XcQvBW16iybqVovrMPWnk7QsTBHq"
 			]
 		}
 	},
