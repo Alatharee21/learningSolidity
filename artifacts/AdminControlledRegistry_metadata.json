@@ -1,0 +1,229 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "notAnAdmin",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_fullName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "YOB",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum AdminControlledRegistry.Gender",
+						"name": "gender",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "emailAddress",
+						"type": "string"
+					}
+				],
+				"name": "DataSubmitted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "genders",
+				"outputs": [
+					{
+						"internalType": "enum AdminControlledRegistry.Gender",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "roles",
+				"outputs": [
+					{
+						"internalType": "enum AdminControlledRegistry.Role",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_fullName",
+						"type": "string"
+					},
+					{
+						"internalType": "enum AdminControlledRegistry.Gender",
+						"name": "_gender",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_YOB",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_email",
+						"type": "string"
+					}
+				],
+				"name": "submitData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "fullName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "YOB",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum AdminControlledRegistry.Gender",
+								"name": "gender",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "emailAddress",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AdminControlledRegistry.UserInformation",
+						"name": "userInformation",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "enum AdminControlledRegistry.RequestType",
+								"name": "typeRequest",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "purpose",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "idN",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AdminControlledRegistry.RegistrationDetails",
+						"name": "regDetails",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AdminControlledRegistry.sol": "AdminControlledRegistry"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AdminControlledRegistry.sol": {
+			"keccak256": "0x6ccf4bdbc5c8a53f64e981be9c5336d433dcb12dbf6894357c8d2078c4e8ef98",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a6b3fb28ce7ca8b541acd1eb424f244955a1e3a6c50ea3c4c260f444e09b010",
+				"dweb:/ipfs/QmQ4bPfCm1fT1XpXAsxGe5ff75QNQ9vPiGebE6cTBUqgHi"
+			]
+		}
+	},
+	"version": 1
+}
