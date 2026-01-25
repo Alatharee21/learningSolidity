@@ -2,10 +2,6 @@
 pragma solidity ^0.8.26;
 
 /*Mini Project: Admin-Controlled Registry
-Store user details in a mapping with nested structs.
-
-
-Use modifiers for admin-only updates.
 
 
 Emit events on user addition or update.
@@ -78,6 +74,15 @@ contract AdminControlledRegistry{
         });
 
         emit DataSubmitted(_fullName, _YOB, _gender, _email);
+    }
+
+    function AddDetails(RequestType _requestType, string memory _purpose, uint256 _Idn)public{
+        users[msg.sender].regDetails = RegistrationDetails({
+            typeRequest: _requestType,
+            purpose: _purpose,
+            idN: _Idn
+        });
+
     }
 
 }

@@ -49,6 +49,29 @@
 			{
 				"inputs": [
 					{
+						"internalType": "enum AdminControlledRegistry.RequestType",
+						"name": "_requestType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_purpose",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_Idn",
+						"type": "uint256"
+					}
+				],
+				"name": "AddDetails",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -217,11 +240,11 @@
 	},
 	"sources": {
 		"AdminControlledRegistry.sol": {
-			"keccak256": "0x6ccf4bdbc5c8a53f64e981be9c5336d433dcb12dbf6894357c8d2078c4e8ef98",
+			"keccak256": "0x10418f77f62ab72e15cddf7179f36ab4d7690a600ed3f1c313a86572fa80f7fe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a6b3fb28ce7ca8b541acd1eb424f244955a1e3a6c50ea3c4c260f444e09b010",
-				"dweb:/ipfs/QmQ4bPfCm1fT1XpXAsxGe5ff75QNQ9vPiGebE6cTBUqgHi"
+				"bzz-raw://838fad50e1d45524aa30fba954b942892f7e9478f8b2a83b509d9eeb6102c11e",
+				"dweb:/ipfs/QmQmPVMHLZMc9JwCxbsM8hR27gUYtnppPXiHNdpN6keWha"
 			]
 		}
 	},
