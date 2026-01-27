@@ -16,6 +16,11 @@
 				"type": "error"
 			},
 			{
+				"inputs": [],
+				"name": "submissionNotPending",
+				"type": "error"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -47,6 +52,69 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "enum AdminControlledRegistry.RequestType",
+						"name": "_fullName",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "purpose",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "iDn",
+						"type": "uint256"
+					}
+				],
+				"name": "DetailsAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum AdminControlledRegistry.Role",
+						"name": "newRole",
+						"type": "uint8"
+					}
+				],
+				"name": "SubmissionAccepted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "reason",
+						"type": "string"
+					}
+				],
+				"name": "SubmissionRejected",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "enum AdminControlledRegistry.RequestType",
@@ -70,25 +138,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "genders",
-				"outputs": [
-					{
-						"internalType": "enum AdminControlledRegistry.Gender",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -105,6 +154,29 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "accept",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "reason",
+						"type": "string"
+					}
+				],
+				"name": "processSubmission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -113,6 +185,25 @@
 				"outputs": [
 					{
 						"internalType": "enum AdminControlledRegistry.Role",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "submissionStatus",
+				"outputs": [
+					{
+						"internalType": "enum AdminControlledRegistry.SubmissionStatus",
 						"name": "",
 						"type": "uint8"
 					}
@@ -240,11 +331,11 @@
 	},
 	"sources": {
 		"AdminControlledRegistry.sol": {
-			"keccak256": "0x10418f77f62ab72e15cddf7179f36ab4d7690a600ed3f1c313a86572fa80f7fe",
+			"keccak256": "0x1ac774b6170686f6310ddfef3b41a9b403c49649e2aea4e63bd9394316c6741e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://838fad50e1d45524aa30fba954b942892f7e9478f8b2a83b509d9eeb6102c11e",
-				"dweb:/ipfs/QmQmPVMHLZMc9JwCxbsM8hR27gUYtnppPXiHNdpN6keWha"
+				"bzz-raw://8645a70bb54061b9f96c0d9723ec82484f320f0c54d0409dbc999d2bd7760e39",
+				"dweb:/ipfs/QmXHbVEmFTbTp4tWbdjkjKXhx5oKz2qqhnDTD6DNCiBs7F"
 			]
 		}
 	},
