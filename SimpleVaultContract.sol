@@ -26,8 +26,12 @@ contract SimpleVaultContract{
 
     }
 
+    function setRole(address user, Role _role) public {
+        roles[user] = _role; 
+    }
+
     function Withdraw(uint256 amount) public payable{
-        require(msg.value > 0, InvalidAmount());
+        require(msg.value < 0, InvalidAmount());
         require(roles[msg.sender] == Role.Admin, NotAnAdmin());
 
         balance[msg.sender] -= msg.value;

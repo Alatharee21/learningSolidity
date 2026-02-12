@@ -96,6 +96,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "enum SimpleVaultContract.Role",
+						"name": "_role",
+						"type": "uint8"
+					}
+				],
+				"name": "setRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -128,11 +146,11 @@
 	},
 	"sources": {
 		"SimpleVaultContract.sol": {
-			"keccak256": "0x0a25c8d989f248b5a7e21db74a34c0d23474d63eb5e40a2357dd13b3e8f40d14",
+			"keccak256": "0x5e324021909261f40a84d5afc7e1a607506f07f3ff655991def1f5c6b3713196",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4284b6d5524c001f5e399d280b30e19999f8d3afcbe461ce016ada3aa24166a6",
-				"dweb:/ipfs/QmbTrnY8hQaxoC282NqtwkehJJSTEn7UDrUCGG8ZcdKdDx"
+				"bzz-raw://9d027d8dd2f0a7b2aa41bf6211964190308d19fafafe3672b5c4f327577cc5f4",
+				"dweb:/ipfs/QmaWQChHK2b3MsMJBMiyvcYgVHYGsREauTiiWmhmqqV7cH"
 			]
 		}
 	},
