@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "Operate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W5day2.sol": "Calculator"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W5day2.sol": {
+			"keccak256": "0x6694c471ba1dd6d2a78311676c498193355aacac0b30c54ed91318ed6117ea1a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fcf86953f9afbe3ab1ae2a0a9c68a1f481bb9fc09b16f01a0aaed67fb3d3dda4",
+				"dweb:/ipfs/QmeMX6osJSH9jq3zS2XZcmuUo3CGTYxSeYchr3WCDcrsYX"
+			]
+		}
+	},
+	"version": 1
+}
