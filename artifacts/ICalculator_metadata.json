@@ -26,7 +26,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"W5day3n4.sol": "AddCalculator"
+			"W5day3n4.sol": "ICalculator"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
