@@ -9,16 +9,16 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
+						"name": "x",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "b",
+						"name": "y",
 						"type": "uint256"
 					}
 				],
-				"name": "Operate",
+				"name": "Addition",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,7 +26,103 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "Divide",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "Multiplication",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "Reminder",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "Subtraction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -43,7 +139,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"W5day2.sol": "Calculator"
+			"MathUtility.sol": "Calculator"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -57,12 +153,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"W5day2.sol": {
-			"keccak256": "0x6694c471ba1dd6d2a78311676c498193355aacac0b30c54ed91318ed6117ea1a",
+		"MathUtility.sol": {
+			"keccak256": "0xd538a591de58b164d817bdb3f11a67e6678c2be1dd0545397bce59ab3dc8eec5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fcf86953f9afbe3ab1ae2a0a9c68a1f481bb9fc09b16f01a0aaed67fb3d3dda4",
-				"dweb:/ipfs/QmeMX6osJSH9jq3zS2XZcmuUo3CGTYxSeYchr3WCDcrsYX"
+				"bzz-raw://0245139430cbb69c70832129b760bcc3df9d8da6f8c72aa3715c6dd0f0adb49b",
+				"dweb:/ipfs/QmY9ghXQW73PxPvh6s8vng3Auk5cn1GNSSm78xcPYMfii7"
 			]
 		}
 	},

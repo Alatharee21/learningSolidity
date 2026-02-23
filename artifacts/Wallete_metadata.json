@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "whaleWalet",
+				"outputs": [
+					{
+						"internalType": "contract Wallete",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W5day4.sol": "Wallete"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W5day4.sol": {
+			"keccak256": "0x510b906063df50fdd0af0ac44bdc78f3ebb00dcbeac79aceaf2ec8a1fa941fa4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ce5de3ee338787a2fa175c71840300b50f9a8834e40ea1f96aae5cb2b72a6311",
+				"dweb:/ipfs/QmQ7YJbyE2tj6MyDuxLD3TSCckxLhhwrVtHSYSnpZLx3tG"
+			]
+		}
+	},
+	"version": 1
+}
