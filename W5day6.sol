@@ -27,7 +27,7 @@ library SavingsLib{
     }
 
     function withdraw(Account storage self, uint256 amount) internal {
-        self.decrease -= amount;
+        self.increase -= amount;
     }
 }
 
