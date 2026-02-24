@@ -1,0 +1,56 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "notOwner",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W5day6.sol": "BaseAccess"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W5day6.sol": {
+			"keccak256": "0xca1629968438e39b6265d178de23a05af97fb07c8405fef0908cc363fb50522f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5069e72b33074b3c5e93a60075869ee53614239348945be46c104404272297a1",
+				"dweb:/ipfs/QmboRaJqrRAWjJZxKuMr8BepHrGJjaebB3eQBp7QWqzrfr"
+			]
+		}
+	},
+	"version": 1
+}
