@@ -59,57 +59,13 @@
 					},
 					{
 						"indexed": false,
-						"internalType": "enum registration.Role",
+						"internalType": "enum Base.Role",
 						"name": "roles",
 						"type": "uint8"
 					}
 				],
 				"name": "Roole",
 				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					},
-					{
-						"internalType": "enum registration.Role",
-						"name": "_roles",
-						"type": "uint8"
-					}
-				],
-				"name": "ChangeRole",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "IncreaseBalance",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_username",
-						"type": "string"
-					}
-				],
-				"name": "RegisterNow",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -132,48 +88,10 @@
 						"type": "address"
 					}
 				],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isRegistered",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
 				"name": "roles",
 				"outputs": [
 					{
-						"internalType": "enum registration.Role",
+						"internalType": "enum Base.Role",
 						"name": "",
 						"type": "uint8"
 					}
@@ -195,7 +113,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"W5day7.sol": "registration"
+			"W5day7.sol": "Base"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -210,11 +128,11 @@
 	},
 	"sources": {
 		"W5day7.sol": {
-			"keccak256": "0x2862fed12ab49536cf670bcdea2ae060d0453deac608be4b312702e0362abf5a",
+			"keccak256": "0xa1510ec7d6f8fdaa128f98b67c1daae268283c58016eb46e1366652d6bc58ff4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://89fb40880d8605d12aa12874c4501a0f1b627724d0fad63d4ec38ba18e16efc8",
-				"dweb:/ipfs/QmdU7SbFsAuvFB7suxvQN5GFWLMy5z5PeeNTHf79go6LXm"
+				"bzz-raw://a30be0517170ce8cb006a34f1b4f8e83392ab82cf04d65031a4b91e78b7a1176",
+				"dweb:/ipfs/QmYCJV9mUatv6ZrznAw6xNf48vw5pJdhqpZrsz94HJfivF"
 			]
 		}
 	},
