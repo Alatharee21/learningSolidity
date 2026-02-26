@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_scores",
+						"type": "uint256[]"
+					}
+				],
+				"name": "addScores",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "scores",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W6day1.sol": "Practice"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W6day1.sol": {
+			"keccak256": "0x78ec83114481326b4c48bd5f18bc7c58c988bf83aadd3dee7b091a0898783a44",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9d85c454bb5e3eb98561bb84f0e88db584035b57dc9d7f3ae2dbaa9061d1cc1",
+				"dweb:/ipfs/QmWHD6bmvAVByBUBiDECE81ptyq1UaLH9bfBUX9P7z1d3R"
+			]
+		}
+	},
+	"version": 1
+}
