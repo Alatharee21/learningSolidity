@@ -9,11 +9,23 @@
 				"inputs": [
 					{
 						"internalType": "uint256[]",
-						"name": "_scores",
+						"name": "_numb",
 						"type": "uint256[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VRtypes.User[]",
+						"name": "uzer",
+						"type": "tuple[]"
 					}
 				],
-				"name": "addScore2",
+				"name": "changeCall",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -22,11 +34,23 @@
 				"inputs": [
 					{
 						"internalType": "uint256[]",
-						"name": "_scores",
+						"name": "_numb",
 						"type": "uint256[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VRtypes.User[]",
+						"name": "uzer",
+						"type": "tuple[]"
 					}
 				],
-				"name": "addScores",
+				"name": "changeMem",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -35,21 +59,21 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "score1",
+						"name": "numb1",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "score2",
+						"name": "numb2",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "score3",
+						"name": "numb3",
 						"type": "uint256"
 					}
 				],
-				"name": "addScores1",
+				"name": "changestor",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -62,11 +86,30 @@
 						"type": "uint256"
 					}
 				],
-				"name": "scores",
+				"name": "numbers",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
 						"type": "uint256"
 					}
 				],
@@ -87,7 +130,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"W6day1.sol": "Practice"
+			"W6day2.sol": "VRtypes"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -101,12 +144,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"W6day1.sol": {
-			"keccak256": "0xbfdbec74b5ee27ea8ff37387654a6c561985c63c614722d5402317cb76b8c2f2",
+		"W6day2.sol": {
+			"keccak256": "0x0bfb2bcf19b84b8e605fec75209b33fd6aa5ad1b98d9788d4e0d3eb05cf948c6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a514ecae9a75d6e83d4137582fd568c8383c2b9ab49a9fa92cfa8a90ccb8d2d",
-				"dweb:/ipfs/QmQb8cFJ5EPgGu6jpLn8gWmXibRz5Xrz2C4WELZc31XuM3"
+				"bzz-raw://d0a563b56323912bb60732afac00c06f82d1ec532dff4670d1d924ea6aff854e",
+				"dweb:/ipfs/QmYEqXcF1LqDVFWM74YPAbUqByx53dEFaQ24DzKCYufBCa"
 			]
 		}
 	},

@@ -47,11 +47,11 @@
 	},
 	"sources": {
 		"W6day1.sol": {
-			"keccak256": "0x78ec83114481326b4c48bd5f18bc7c58c988bf83aadd3dee7b091a0898783a44",
+			"keccak256": "0xbfdbec74b5ee27ea8ff37387654a6c561985c63c614722d5402317cb76b8c2f2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d9d85c454bb5e3eb98561bb84f0e88db584035b57dc9d7f3ae2dbaa9061d1cc1",
-				"dweb:/ipfs/QmWHD6bmvAVByBUBiDECE81ptyq1UaLH9bfBUX9P7z1d3R"
+				"bzz-raw://4a514ecae9a75d6e83d4137582fd568c8383c2b9ab49a9fa92cfa8a90ccb8d2d",
+				"dweb:/ipfs/QmQb8cFJ5EPgGu6jpLn8gWmXibRz5Xrz2C4WELZc31XuM3"
 			]
 		}
 	},

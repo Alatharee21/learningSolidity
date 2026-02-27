@@ -38,4 +38,19 @@ contract Practice{
         scores.push(_scores[i]);
         }
     }
+
+    function addScore2(uint256[] calldata _scores) public {
+        
+        for (uint256 i=0; i<_scores.length; i++){
+        scores.push(_scores[i]);
+        }
+    }
+
+    function addScores1(uint256 score1, uint256 score2, uint256 score3) public {
+        
+        scores.push(score1);
+        scores.push(score2);
+        scores.push(score3);
+        
+    }
 }
