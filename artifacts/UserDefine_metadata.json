@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "DepositSomething",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "WalletId",
+						"name": "deposi",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "WalletId",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "user",
+				"outputs": [
+					{
+						"internalType": "DepositAmount",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W6day4.sol": "UserDefine"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W6day4.sol": {
+			"keccak256": "0x148a26223a760d3b58f4b923030f28e8c7153103a95f1b511b02ae0adde6670f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bdf8e292d848edcdadac6a4aa045a63bd118c8e5c56a338042f5659d5ffe6027",
+				"dweb:/ipfs/QmZutPzguUyzeFH9N6886ARFkRpW7mozZmc9qsWAbNjL1k"
+			]
+		}
+	},
+	"version": 1
+}

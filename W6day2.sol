@@ -13,10 +13,12 @@ contract VRtypes{
     User[] public users;
 
     function changeMem(uint256[] memory _numb, User[] memory uzer) public {
-        for(uint256 i = 0; i < _numb.length; i++){
+        uint256 len = _numb.length;
+        uint256 lenz = uzer.length;
+        for(uint256 i = 0; i < len; i++){
             numbers.push(_numb[i]);
         }
-        for(uint256 i = 0; i < uzer.length; i++){
+        for(uint256 i = 0; i < lenz; i++){
             users.push(uzer[i]);
         }
         
@@ -28,10 +30,13 @@ contract VRtypes{
     }
 
     function changeCall(uint256[] calldata _numb, User[] calldata uzer) external {
-        for(uint256 i = 0; i < _numb.length; i++){
+        uint256 len = _numb.length;
+        uint256 lenz = uzer.length;
+
+        for(uint256 i = 0; i < len; i++){
             numbers.push(_numb[i]);
         }
-        for(uint256 i = 0; i < uzer.length; i++){
+        for(uint256 i = 0; i < lenz; i++){
             users.push(uzer[i]);
         }
         

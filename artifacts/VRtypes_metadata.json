@@ -145,11 +145,11 @@
 	},
 	"sources": {
 		"W6day2.sol": {
-			"keccak256": "0x0bfb2bcf19b84b8e605fec75209b33fd6aa5ad1b98d9788d4e0d3eb05cf948c6",
+			"keccak256": "0x7a4f9093e0470e216828637c74dbf4e13e2ef0e201f8fe158e72d792f2b457ad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0a563b56323912bb60732afac00c06f82d1ec532dff4670d1d924ea6aff854e",
-				"dweb:/ipfs/QmYEqXcF1LqDVFWM74YPAbUqByx53dEFaQ24DzKCYufBCa"
+				"bzz-raw://bd3eea4b6dc1f33a4445a79d1c94a9ba5ab0805e50b00d7c9ecfb55ce2573908",
+				"dweb:/ipfs/QmPEg6Z1rjDfuUjaaWqyKNdjX9K8KEEjgKWFxsW6hBsvnq"
 			]
 		}
 	},
