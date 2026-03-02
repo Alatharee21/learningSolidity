@@ -14,8 +14,8 @@
 				"inputs": [
 					{
 						"internalType": "WalletId",
-						"name": "deposi",
-						"type": "uint256"
+						"name": "depositor",
+						"type": "address"
 					}
 				],
 				"name": "deposit",
@@ -28,7 +28,7 @@
 					{
 						"internalType": "WalletId",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"name": "user",
@@ -40,6 +40,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "WalletId",
+						"name": "depositor",
+						"type": "address"
+					},
+					{
+						"internalType": "WithdrawAmount",
+						"name": "amt",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -71,11 +89,11 @@
 	},
 	"sources": {
 		"W6day4.sol": {
-			"keccak256": "0x148a26223a760d3b58f4b923030f28e8c7153103a95f1b511b02ae0adde6670f",
+			"keccak256": "0xb770a44a5e1cba7445ec6e4646644e976a5ba8fe6e009509245a82d0088c0d63",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bdf8e292d848edcdadac6a4aa045a63bd118c8e5c56a338042f5659d5ffe6027",
-				"dweb:/ipfs/QmZutPzguUyzeFH9N6886ARFkRpW7mozZmc9qsWAbNjL1k"
+				"bzz-raw://e82cc502bea224ec64d1b5c699df46451e1a50af2ab7a19e88f756d61b5500fc",
+				"dweb:/ipfs/QmYkYME3Gqf7YYHjd7U33xW99dQc6TcyA6p5gqW2bcVpSc"
 			]
 		}
 	},
