@@ -57,7 +57,7 @@
 				],
 				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -89,11 +89,11 @@
 	},
 	"sources": {
 		"W6day4.sol": {
-			"keccak256": "0xb770a44a5e1cba7445ec6e4646644e976a5ba8fe6e009509245a82d0088c0d63",
+			"keccak256": "0xaf911b4584e9867fbd92f89f5b15ee3edc558d560ac70a72635c3d6887ed6f0b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e82cc502bea224ec64d1b5c699df46451e1a50af2ab7a19e88f756d61b5500fc",
-				"dweb:/ipfs/QmYkYME3Gqf7YYHjd7U33xW99dQc6TcyA6p5gqW2bcVpSc"
+				"bzz-raw://b8d87a8e5e54e104a1bca1fe1fe4a44edd5bb46ddb97c603e5fb1eadbf5d2aaf",
+				"dweb:/ipfs/QmVqpsQXTRQRJ9woYEXK6cwWeDRjz2fPKp4py7ZwfXSRpp"
 			]
 		}
 	},

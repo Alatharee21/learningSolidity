@@ -20,12 +20,19 @@ contract UserDefine{
         user[depositor] = DepositAmount.wrap(updated);
     }
 
-    function withdraw(WalletId depositor, WithdrawAmount amt) public payable{
-        require(WithdrawAmount.unwrap(amt) != 0, DepositSomething());
+    function withdraw(WalletId depositor, WithdrawAmount amt) public {
+    uint256 withdrawValue = WithdrawAmount.unwrap(amt);
+    require(withdrawValue > 0, DepositSomething());
 
-        (bool success, ) = msg.sender.call{value: WithdrawAmount.unwrap(amt)}("");
-        require(success, "Transfer failed");
-        
-        user[WalletId(msg.sender)] -= DepositAmount(WithdrawAmount(amt));
-    }
+    DepositAmount current = user[depositor];
+    uint256 currentValue = DepositAmount.unwrap(current);
+
+    require(currentValue >= withdrawValue, "Insufficient balance");
+
+    uint256 updated = currentValue - withdrawValue;
+    user[depositor] = DepositAmount.wrap(updated);
+
+    (bool success, ) = msg.sender.call{value: withdrawValue}("");
+    require(success, "Transfer failed");
+}
 }

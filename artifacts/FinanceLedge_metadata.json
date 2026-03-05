@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TypedFinancialLedgerContract.sol": "FinanceLedge"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TypedFinancialLedgerContract.sol": {
+			"keccak256": "0x037ccfe294e3493174db6e6973ea0b60f9c106d32f796823229861162cb8db10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://035f9898d63e9df8ff896fce17d35072a80f64a8100977a28ec4c7457ac7bbf9",
+				"dweb:/ipfs/QmZ9HSfqt8gmtihJsdvaYTxyBq99ih9GznCq21QBmuhGJ3"
+			]
+		}
+	},
+	"version": 1
+}
