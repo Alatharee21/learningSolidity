@@ -1,0 +1,104 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "FinanceLedger.amounts",
+						"name": "amt",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "ledger",
+				"outputs": [
+					{
+						"internalType": "FinanceLedger.amounts",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "FinanceLedger.amounts",
+						"name": "amt",
+						"type": "uint256"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TypedFinancialLedgerContract.sol": "FinanceLedger"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TypedFinancialLedgerContract.sol": {
+			"keccak256": "0xb0d5e8c9d5bf24efc0d96a09dc74fe134257c503c575f3fe2cf60cb0ee0ff9f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56f16e7fc8d8738f0a68c49365a6a3cc8b3476e234050419a9047654bf8047f4",
+				"dweb:/ipfs/QmaUnRyEByyF7k93mFxcUK8xGYCThf5nrgvCmkJLtwcGKf"
+			]
+		}
+	},
+	"version": 1
+}

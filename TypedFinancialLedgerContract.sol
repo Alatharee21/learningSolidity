@@ -1,17 +1,26 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-contract FinanceLedge{
-    /*Mini Project: Typed Financial Ledger
-Use custom value types for amounts.
+
+contract FinanceLedger{
+    type amounts is uint256;
+    mapping(address => amounts) public ledger;
 
 
-Store ledger entries in mappings and arrays.
+function add(amounts  amt)public{
+    uint256 theAmount = amounts.unwrap(amt);
 
+    uint256 current = amounts.unwrap(ledger[msg.sender]);
+    ledger[msg.sender] = amounts.wrap(current + theAmount);
+}
 
-Efficiently manage storage vs memory in functions.
+function update(amounts  amt)public{
+    uint256 theNewAmount = amounts.unwrap(amt);
+    ledger[msg.sender] = amounts.wrap(theNewAmount);
+}
 
+function retrieve()public view returns(uint256){
+    return amounts.unwrap(ledger[msg.sender]);
+}
 
-Functions for adding, updating, and retrieving ledger entries.
-*/
 }
