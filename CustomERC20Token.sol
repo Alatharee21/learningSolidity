@@ -6,6 +6,7 @@ contract RasheedToken{
     string public name;
     string public symbol;
     uint256 public decimals;
+    address public owner;
 
     //state*private
     uint256 private _totalSupply;
@@ -15,17 +16,21 @@ contract RasheedToken{
     mapping(address => mapping(address => uint256)) private allowances;
 
     //Constructor - to be declared before deployment
-    constructor(string memory _name, string memory _symbol, uint256 _decimals, uint256 initialSupply){
-        name = _name;
-        symbol = _symbol;
-        decimals = _decimals;
+    constructor(uint256 initialSupply){
+        name = "Rasheed";
+        symbol = "Rash";
+        decimals = 18;
+        owner = msg.sender;
 
         balances[msg.sender] = initialSupply;
         //_totalSupply = 5000000;
     }
 
-    increaseAllowance(address spender, uint256 addedValue);
-    decreaseAllowance(address spender, uint256 subtractedValue);
+    //modifiers
+    modifier onlyAdmin(){
+        require(msg.sender == owner, notAdmin());
+        _;
+    }
 
     //events
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -36,6 +41,7 @@ contract RasheedToken{
     error InsufficientFund();
     error InvalidAddress();
     error AllowanceExceeded();
+    error notAdmin();
 
     //functions
     function totalSupply() public view returns(uint256){
@@ -66,8 +72,8 @@ contract RasheedToken{
         return true;
     }
 
-    function allowance(address owner, address spender) public view returns (uint256){
-    return allowances[owner][spender];
+    function allowance(address ownerr, address spender) public view returns (uint256){
+    return allowances[ownerr][spender];
     }
 
     function transferFrom( address from, address to, uint256 amount) public returns (bool){
@@ -83,4 +89,26 @@ contract RasheedToken{
 
         return true;
     }
+
+    function increaseAllowance(address spender, uint256 addedValue) public returns(bool){}
+    function decreaseAllowance(address spender, uint256 subtractedValue) public returns(bool){}
+
+    function mint(address to, uint256 amount) public onlyAdmin {
+
+    _totalSupply += amount;
+
+    balances[to] += amount;
+
+    emit Transfer(address(0), to, amount);
+}
+
+    function burn(address to, uint256 amount) public onlyAdmin {
+        require(balances[msg.sender] >= amount, "insufficient fund");
+
+    _totalSupply -= amount;
+
+    balances[to] -= amount;
+
+    emit Transfer(to, address(0), amount);
+}
 }

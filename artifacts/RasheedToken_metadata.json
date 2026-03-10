@@ -8,21 +8,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_symbol",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_decimals",
-						"type": "uint256"
-					},
-					{
 						"internalType": "uint256",
 						"name": "initialSupply",
 						"type": "uint256"
@@ -49,6 +34,11 @@
 			{
 				"inputs": [],
 				"name": "InvalidAddress",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "notAdmin",
 				"type": "error"
 			},
 			{
@@ -105,7 +95,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "ownerr",
 						"type": "address"
 					},
 					{
@@ -169,6 +159,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -182,6 +190,72 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -189,6 +263,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -302,11 +389,11 @@
 	},
 	"sources": {
 		"W7day4.sol": {
-			"keccak256": "0x51d8d594a5d8a18dfdb401a6b51274cd09f7656b5073078a79b0ab8b12f645e6",
+			"keccak256": "0x6ccca9aeff560c573912b88adfc21d08289c966e3f3e1977a40b80ecbe8210f3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd7f0638ff721e3d9d23a2677cd903f8c380f2b77ce878595478964abdf71f62",
-				"dweb:/ipfs/QmeNQ4UtWEYDswSZmr8iDVbSdnnewefrBU9dbg6mTUFB2n"
+				"bzz-raw://2cb4e1b87e27c1c4a4dd765d5e43ad561d4d6381c81ee8c255b375539a3ff99a",
+				"dweb:/ipfs/QmZTYCARqwHfxgH9baGoK9GWjdVHd1d6zoFVF2LJmSoEvm"
 			]
 		}
 	},
