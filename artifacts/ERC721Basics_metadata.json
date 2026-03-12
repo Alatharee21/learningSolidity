@@ -93,6 +93,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "batchMint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "mintNFT",
 				"outputs": [],
@@ -215,11 +228,11 @@
 	},
 	"sources": {
 		"W8day1.sol": {
-			"keccak256": "0x322267ac9c6a2b53c4f1159c1e4ba997f37d3dc46f8cb099f45847254da41763",
+			"keccak256": "0xb8554ab6bd2c5525d603c16b83987cd535e11f52d3c3f4f6076a3e1c5be5d034",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b40ea71e06340fe20c8ee2f850fb5142232108a6d013fb1cf140c0c2c9dcf6c2",
-				"dweb:/ipfs/QmXGQa452BJ3wjNZ13KAje6SAZ6KsL2oii7oXEUaNuDUMH"
+				"bzz-raw://80199448c9f24c08d60756cc5d2179816dce2429d38d0a12a4688e2c3e62a04d",
+				"dweb:/ipfs/Qmeoh7pGoWzfrintG2wbBQh2ZycmB85TKX6uL9p9QKrFCv"
 			]
 		}
 	},

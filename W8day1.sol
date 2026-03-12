@@ -34,6 +34,20 @@ contract ERC721Basics{
 
     }
 
+    function batchMint(uint256 quantity) public {
+        for(uint256 i = 0; i < quantity; i++){
+            uint256 tokenId = nextTokenId;
+
+        nextTokenId++;
+
+        owners[tokenId] = msg.sender;
+
+        balances[msg.sender]++;
+
+        emit Transfer(address(0), msg.sender, tokenId);
+        }
+    }
+
     function transferFrom(address from, address to, uint256 tokenId) public returns(bool){
         
         balances[from] -= tokenId;
