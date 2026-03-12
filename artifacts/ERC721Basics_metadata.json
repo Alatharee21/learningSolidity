@@ -93,6 +93,39 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "mintNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nextTokenId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -106,6 +139,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -130,7 +176,13 @@
 					}
 				],
 				"name": "transferFrom",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -163,11 +215,11 @@
 	},
 	"sources": {
 		"W8day1.sol": {
-			"keccak256": "0xc00f418d13cd38276a7e1556bd4609b4022d39e45f944c5412678b8447d41278",
+			"keccak256": "0x322267ac9c6a2b53c4f1159c1e4ba997f37d3dc46f8cb099f45847254da41763",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49bf52dc6f08e67921b939a412e9299fb0e249403c3b2ea6cd0f530063fbd833",
-				"dweb:/ipfs/QmNQuuRr9fZZLyAPjxBeRMNnUURMdGrpeudV1nhEYUVMsv"
+				"bzz-raw://b40ea71e06340fe20c8ee2f850fb5142232108a6d013fb1cf140c0c2c9dcf6c2",
+				"dweb:/ipfs/QmXGQa452BJ3wjNZ13KAje6SAZ6KsL2oii7oXEUaNuDUMH"
 			]
 		}
 	},
