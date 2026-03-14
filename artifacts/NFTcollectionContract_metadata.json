@@ -125,7 +125,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"NFTcollectionContract.sol": "W8NFT"
+			"NFTcollectionContract.sol": "NFTcollectionContract"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -140,11 +140,11 @@
 	},
 	"sources": {
 		"NFTcollectionContract.sol": {
-			"keccak256": "0xcc52554a7c3a835f268fac71a2fd1ded7a5725014e48676119fca51ef32b9822",
+			"keccak256": "0xdd12f2ee8ddef22401db501f3bd7ba87d435a01caa71751d2ccf193a2458fd44",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://64225190386ecde41b7feddb8dc348db9b8be432041855364af718f3a19333b1",
-				"dweb:/ipfs/QmQjGdBAseke8cvovWBibgJ8mgk9sSHnW6isPm9d8iknN4"
+				"bzz-raw://2cbcfa02dc4591f2276d1372e72fc5baebf0aa5bd1625a6e63931a6ebd292c87",
+				"dweb:/ipfs/QmdZvFhpCkvvurkCXULp32QrHgdXQi6YpuupCTBdGYDVo5"
 			]
 		}
 	},

@@ -6,6 +6,16 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "exploiter",
+				"type": "error"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -80,6 +90,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "old",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "ownerState",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -135,6 +164,29 @@
 						"type": "address"
 					},
 					{
+						"internalType": "uint256[]",
+						"name": "id",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amount",
+						"type": "uint256[]"
+					}
+				],
+				"name": "mintBatch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
@@ -146,6 +198,26 @@
 					}
 				],
 				"name": "mintSingle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -182,6 +254,19 @@
 				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -212,11 +297,11 @@
 	},
 	"sources": {
 		"W8day3.sol": {
-			"keccak256": "0x3313eae5c28837f0552976cfe17a0e2f61423af4f4aa9d5c029db90445afc833",
+			"keccak256": "0x901b3e480e564f1336e95f4e83d7c443bbde2d73b02cf3a3f97146a06061a93c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://38953ab254988a414c89faff6397e94389db27f5e2cb7b406605edeaed089313",
-				"dweb:/ipfs/QmXp2eJSwRYTNdtfR2T7HTMhCP7ZcUsH3BY1uSs71FP4JP"
+				"bzz-raw://8f1c908cc37ee0e448bdcdfd299263333cbadae9554daad9014deee79a582182",
+				"dweb:/ipfs/QmVC94pzhJN1yWD8VJkXVFiDkKqm7R87uDb115uweFpKXs"
 			]
 		}
 	},
