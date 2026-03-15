@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AlreadyInitialized",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"W9day1n2.sol": "Prozy"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"W9day1n2.sol": {
+			"keccak256": "0x1bb19d864d2ec2775ea56fe73f6581a1e4706e9879aa033216886ddb4103530a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21234f3717f1f4c8e3d7177f9af4d2f5394ecd95e6c3db2fe4452912651e7346",
+				"dweb:/ipfs/QmXSpZsmj9ij6YsR1eUkQJDF3ArFpkk6d3LGorGLLktUoy"
+			]
+		}
+	},
+	"version": 1
+}
