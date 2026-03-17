@@ -13,6 +13,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getImplementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -21,6 +34,19 @@
 					}
 				],
 				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newImplementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -67,11 +93,11 @@
 	},
 	"sources": {
 		"SecureUpgradableVault.sol": {
-			"keccak256": "0xbe23d2ce84391f4dcdfb927a638a71b0572ddfc57f7f1239cb4c9bdb4e8770d2",
+			"keccak256": "0xd0304ae55aa57245190a69731811399833dd4afea042255e804d75599e5d66c9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a86efa59c94a1bae429054f0f88e4f084860fb226b6fcd05ee65562a77a2b49c",
-				"dweb:/ipfs/QmPS2RhfHVXkEfBkWUcGdLeDstCU9CqVb5y3Spupv37t9x"
+				"bzz-raw://e6f04789854f57ce4e33a9567ed8c7dd3fc48eb42d835a08885bdd54ba89605c",
+				"dweb:/ipfs/QmdMfKmWU8pN1uiZjXoPxxxoLxdxgR7q3y4xAHWBxcTfV5"
 			]
 		}
 	},
