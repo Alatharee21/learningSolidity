@@ -11,16 +11,12 @@ contract SimpleVaultContract{
     mapping(address => uint256) public balance;
     mapping(address => Role) public roles;
 
-
-    error InvalidAmount();
-    error NotAnAdmin();
-
     constructor(){
         owner = msg.sender;
     }
 
     function Deposit() public payable{
-        require(msg.value > 0, InvalidAmount());
+        require(msg.value > 0, "Invalid Amount");
 
         balance[msg.sender] += msg.value;
 
@@ -31,8 +27,8 @@ contract SimpleVaultContract{
     }
 
     function Withdraw(uint256 amount) public payable{
-        require(msg.value < 0, InvalidAmount());
-        require(roles[msg.sender] == Role.Admin, NotAnAdmin());
+        require(msg.value < 0, "Invalid Amount");
+        require(roles[msg.sender] == Role.Admin, "Not An Admin");
 
         balance[msg.sender] -= msg.value;
 

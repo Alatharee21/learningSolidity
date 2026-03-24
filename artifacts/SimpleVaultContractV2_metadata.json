@@ -114,7 +114,7 @@
 				"name": "roles",
 				"outputs": [
 					{
-						"internalType": "enum SimpleVaultContract.Role",
+						"internalType": "enum SimpleVaultContractV2.Role",
 						"name": "",
 						"type": "uint8"
 					}
@@ -130,7 +130,7 @@
 						"type": "address"
 					},
 					{
-						"internalType": "enum SimpleVaultContract.Role",
+						"internalType": "enum SimpleVaultContractV2.Role",
 						"name": "_role",
 						"type": "uint8"
 					}
@@ -158,7 +158,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleVaultContractV2.sol": "SimpleVaultContract"
+			"SimpleVaultContractV2.sol": "SimpleVaultContractV2"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -173,11 +173,11 @@
 	},
 	"sources": {
 		"SimpleVaultContractV2.sol": {
-			"keccak256": "0xf9ab0b68b306ae0cbcc67755bf90392ab655a68464de61d1793ae9643417245e",
+			"keccak256": "0x3dcffb4abd9cca7687815ac388c61f6588654c7bd53554518e45f2053ea95f2d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0c81a90c177f2369f53a1697d1f49be374bf5cc83062292d2d04cd1c231da85",
-				"dweb:/ipfs/Qma28W7aGvLEy7J28jLfFLYT8iBN5S525Jk7sCGH529mwj"
+				"bzz-raw://cb322a98a80b753447ca4074806274138f79aa9114a761414b2073132ba25831",
+				"dweb:/ipfs/QmfC4bD1EjgnDh1arDNwK96AXm642fB8Qx4MZ1325Q5JVB"
 			]
 		}
 	},
